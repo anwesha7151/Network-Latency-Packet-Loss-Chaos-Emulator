@@ -1,0 +1,9 @@
+# A link that gets progressively worse, then recovers.
+# Format: at <seconds> <preset or key=value ...>   (each step modifies the previous one)
+at 0   none                    # healthy
+at 10  lte                     # normal mobile conditions
+at 20  3g                      # moving into a weak-signal area
+at 30  loss=12 delay=450       # congestion + bad radio
+at 40  blackhole               # tunnel: total outage
+at 45  edge-2g                 # coming back, poor
+at 55  none                    # recovered

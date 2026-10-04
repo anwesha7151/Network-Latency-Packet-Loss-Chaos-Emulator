@@ -1,0 +1,4 @@
+# Short scenario for live demos (about 12 s).
+at 0  none
+at 4  lossy-wifi
+at 8  lossy-wifi loss=5 delay=40
